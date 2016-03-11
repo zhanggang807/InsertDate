@@ -1,17 +1,15 @@
 <idea-plugin version="2">
-  <id>com.your.company.unique.plugin.id</id>
-  <name>Plugin display name here</name>
+  <id>org.dean.idea.plugin.insert.date</id>
+  <name>Insert Date Here</name>
   <version>1.0</version>
-  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+  <vendor email="deanzhg@gmail.com" url="http://www.dean.org">Dean.org</vendor>
 
   <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <em>most HTML tags may be used</em>
+  在光标处插入一段注释，标明修改日期和修改人，并把光标移至注释符后，方便继续工作。
     ]]></description>
 
   <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
+  None.
     ]]>
   </change-notes>
 
@@ -30,6 +28,10 @@
 
   <actions>
     <!-- Add your actions here -->
+    <action id="InsertDate" class="InsertDateAction" text="Insert Date Here" description="insert current date">
+      <keyboard-shortcut first-keystroke="ctrl L" second-keystroke="" keymap="$default"/>
+      <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+    </action>
   </actions>
 
   <application-components>
