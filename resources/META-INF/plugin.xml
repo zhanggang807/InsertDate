@@ -29,7 +29,7 @@
   <actions>
     <!-- Add your actions here -->
     <action id="InsertDate" class="InsertDateAction" text="Insert Date Here" description="insert current date">
-      <keyboard-shortcut first-keystroke="ctrl L" second-keystroke="" keymap="$default"/>
+      <keyboard-shortcut first-keystroke="ctrl l" keymap="$default"/>
       <add-to-group group-id="EditorPopupMenu" anchor="first"/>
     </action>
   </actions>
